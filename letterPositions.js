@@ -35,6 +35,7 @@ const eqArrays = function(array1, array2) {
   }
 };
 
+// Test Cases:
 assertArrayEqual(letterPositions("hello").e, [1]);
 assertArrayEqual(letterPositions("hello world").l, [2,3,9]);
 assertArrayEqual(letterPositions("lighthouse in the house").h, [3,5,15,17]);
