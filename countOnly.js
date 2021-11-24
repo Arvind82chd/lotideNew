@@ -1,8 +1,8 @@
-const countOnly = function(allItemsArray, itemsToCountObject) {
+const countOnly = function(allItems, itemsToCount) {
   let results = {};
-  for (let item of allItemsArray) {
+  for (let item of allItems) {
     
-    if (itemsToCountObject[item]) {
+    if (itemsToCount[item]) {
     
       if (results[item]) {
         results[item] += 1;
@@ -13,8 +13,6 @@ const countOnly = function(allItemsArray, itemsToCountObject) {
   }
   return results;
 };
-
-
 
 
 const assertEqual = function(actual, expected) {
