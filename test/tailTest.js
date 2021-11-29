@@ -1,28 +1,28 @@
 const tail = require('../tail');
-const assertEqual = require('../assertEqual');
+const assert = require("chai").assert;
+
 
 // Test Cases:
-const result = tail(["Hello", "Lighthouse", "Labs"]);
-assertEqual(result.length, 2);
-assertEqual(result[0], "Lighthouse");
-assertEqual(result[1], "Labs");
 
-const result1 = tail([5,6,7]);
-assertEqual(result1.length, 3);
-assertEqual(result1[0], 5);
-assertEqual(result1[1], 6);
+describe("#tail", () => {
+    
+    it(`return ["Lighthouse", "Labs"] for ["Hello", "Lighthouse", "Labs"]`, () => {
+        assert.deepEqual(tail(["Hello", "Lighthouse", "Labs"]), ["Lighthouse", "Labs"]);
+    });
 
-const result2 = tail([5,6,7]);
-assertEqual(result2.length, 2);
-assertEqual(result2[0], 6);
-assertEqual(result2[1], 7);
+    it("return [6, 7] for [5, 6, 7]", () => {
+        assert.deepEqual(tail([5, 6, 7]), [6, 7]);
+    });
 
-const emptyArr = tail([]);
-assertEqual(emptyArr.length, 0);
+    it("return [] for []", () => {
+        assert.deepEqual(tail([]), []);
+    });
 
-const oneValueArr = tail([1]);
-assertEqual(oneValueArr.length, 0);
+    it("return [] for [1]", () => {
+        assert.deepEqual(tail([1]), []);
+    });
 
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words);
-assertEqual(words.length, 3);
+    it(`return ["Lighthouse", "Labs"] for ["The", "Lighthouse", "Labs"]`, () => {
+        assert.deepEqual(tail(["The", "Lighthouse", "Labs"]), ["Lighthouse", "Labs"]);
+    });
+});
