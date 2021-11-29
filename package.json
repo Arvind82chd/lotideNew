@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/Arvind82chd/lotideNew.git"
   },
-  "author": "",
+  "author": "Arvind Sharma",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Arvind82chd/lotideNew/issues"
@@ -22,5 +22,8 @@
   "devDependencies": {
     "chai": "^4.3.4",
     "mocha": "^9.1.3"
+  },
+  "dependencies": {
+    "my-package": "^0.0.0"
   }
 }

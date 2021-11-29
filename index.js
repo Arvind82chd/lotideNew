@@ -15,8 +15,6 @@ const letterPositions = require('./letterPositions');
 const map = require('./map');
 const takeUntil = require('./takeUntil');
 const without = require('./without');
-//const map = require('./map');
-
 
 
 module.exports = {
@@ -37,5 +35,4 @@ module.exports = {
     map,
     takeUntil,
     without,
-  //  head: head,
 };
