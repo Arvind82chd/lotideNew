@@ -50,4 +50,4 @@ const assertEqual = function(actual, expected) {
     "f": 76
   }, x => x[1] === 2), "a");
 
-  
+module.exports = findKey;

@@ -49,3 +49,5 @@ for (let res in result1) {
 }
 
 //assertEqual(countLetters("lighthouse in the house"), object);
+
+module.exports = countLetters;
