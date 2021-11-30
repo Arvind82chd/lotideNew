@@ -1,6 +1,6 @@
 {
-  "name": "lotide",
-  "version": "1.0.0",
+  "name": "@arvind.sharma/lotide",
+  "version": "1.0.1",
   "description": "",
   "main": "assertArrayEqual.js",
   "directories": {
