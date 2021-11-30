@@ -30,25 +30,3 @@ describe("#eqObjects", () => {
     });
 })
 
-// eqObjects(ab, ba); // => true
-// assertEqual(eqObjects(ab, ba),true);
-
-
-// eqObjects(ab, abc); // => false
-// assertEqual(eqObjects(ab, abc), false);
-
-
-// eqObjects(cd, dc); // => true
-// assertEqual(eqObjects(cd, dc), true);
-
-
-// eqObjects(cd, cd2); // => false
-// assertEqual(eqObjects(cd, cd2), false);
-
-
-// //----------recurcive testing:
-
-// eqObjects({ a: { z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 }) // => true
-
-// eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 }) // => false
-// eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: 1, b: 2 }) // => false
