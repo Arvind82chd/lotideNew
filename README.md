@@ -43,4 +43,5 @@ The following functions are currently implemented:
 * `map(...)`: It maps the input array and callback function returning an array as per the callback.
 * `takeUntil(...)`: It takes in an array and a callback returning an new array from previous, which stops taking any further values ones the callback is executed.
 * `without(...)`: Takes in two arrays and returns an array without the values from the reference one.
+* `recursiveEqArrays(...)`: Takes in two arrays and returns true or false if they are equal or not respectively using recurssion.
 * `Subsequent tests(...)`: It also contains six diffrent types of tests for specific functions only, including use of mocha and chai.
